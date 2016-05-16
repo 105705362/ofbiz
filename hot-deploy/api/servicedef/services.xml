@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/services.xsd">
+	<description>api Services</description>
+	<vendor></vendor>
+	<version>1.0</version>
+
+	<service name="showDemo" engine="java"
+		location="com.infosys.ecommerce.api.DemoServices" invoke="demo"
+		export="true">
+		<description>demo service, say hello to you</description>
+		<attribute name="greeting" type="String" mode="IN" optional="true" /> <!-- can be null or ANY to include any -->
+		<attribute name="hello" type="String" mode="OUT" optional="true" />
+	</service>
+
+</services>
