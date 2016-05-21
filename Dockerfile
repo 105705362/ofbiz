@@ -1,4 +1,4 @@
-FROM java:7
+FROM java:8
 #RUN wget http://mirrors.cnnic.cn/apache/ofbiz/apache-ofbiz-13.07.03.zip
 #RUN echo 'downloaded'
 #RUN unzip ./apache-ofbiz-13.07.03.zip
